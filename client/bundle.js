@@ -33720,7 +33720,7 @@ var Add = function (_React$Component) {
             {
               isOpen: this.state.modalIsOpen,
               onRequestClose: this.closeModal,
-              contentLabel: 'Add Expense',
+              contentLabel: 'Lis\xE4\xE4 kustannus',
               className: 'Modal' },
             _react2.default.createElement(
               _reactRouterDom.Link,
@@ -33863,7 +33863,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 _reactBootstrap.Button,
                 { bsStyle: 'success', bsSize: 'small', onClick: this.onClick },
-                'Add New Expense'
+                'Lis\xE4\xE4 uusi kustannus'
               )
             )
           )
@@ -33883,7 +33883,7 @@ var Add = function (_React$Component) {
               isOpen: this.state.modalIsOpen,
               onAfterOpen: this.afterOpenModal,
               onRequestClose: this.closeModal,
-              contentLabel: 'Add Expense',
+              contentLabel: 'Lis\xE4\xE4 kustannus',
               className: 'Modal' },
             _react2.default.createElement(
               'div',
@@ -33899,7 +33899,7 @@ var Add = function (_React$Component) {
                 _react2.default.createElement(
                   _reactBootstrap.Button,
                   { bsStyle: 'success', bsSize: 'mini', onClick: this.closeModal },
-                  'Close the Dialog'
+                  'Sulje dialogi'
                 )
               )
             )

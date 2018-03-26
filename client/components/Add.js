@@ -31,7 +31,7 @@ openModal() {
 closeModal() {
       this.setState({
         modalIsOpen: false,
-        description: '',
+        : '',
         amount: '',
         month: 'Jan',
         year: 2016,
@@ -118,7 +118,7 @@ render() {
           <Modal
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
-            contentLabel="Add Expense"
+            contentLabel="Lisää kustannus"
        className="Modal">
 <Link to={{pathname: '/', search: '?month='+this.state.month+'&year='+this.state.year }} style={{ textDecoration: 'none' }}>
        <Button bsStyle="danger" bsSize="mini" onClick={this.closeModal}><span className="closebtn glyphicon glyphicon-remove"></span></Button>
@@ -151,7 +151,7 @@ render() {
       </fieldset>
 <div className='button-center'>
         <br/>
-        <Button bsStyle="success" bsSize="small" onClick={this.onClick}>Add New Expense</Button>
+        <Button bsStyle="success" bsSize="small" onClick={this.onClick}>Lisää uusi kustannus</Button>
        </div>
           </Modal>
         </div>
@@ -165,12 +165,12 @@ render() {
         isOpen={this.state.modalIsOpen}
         onAfterOpen={this.afterOpenModal}
         onRequestClose={this.closeModal}
-        contentLabel="Add Expense"
+        contentLabel="Lisää kustannus"
         className="Modal">
 <div className='button-center'>
         <h3>{this.state.messageFromServer}</h3>
         <Link to={{pathname: '/', search: '?month='+this.state.month+'&year='+this.state.year}} style={{ textDecoration: 'none' }}>
-         <Button bsStyle="success" bsSize="mini" onClick={this.closeModal}>Close the Dialog</Button>
+         <Button bsStyle="success" bsSize="mini" onClick={this.closeModal}>Sulje dialogi</Button>
         </Link>
        </div>
       </Modal>

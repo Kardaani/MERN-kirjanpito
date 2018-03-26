@@ -157,7 +157,7 @@ render() {
 <div className='button-center'>
               <h3>{this.state.messageFromServer}</h3>
               <Link to={{pathname: '/', search: '?month='+this.state.month+'&year='+this.state.year}} style={{ textDecoration: 'none' }}>
-                <Button bsStyle="success" bsSize="mini" onClick={this.closeModal}>Close the Dialog</Button>
+                <Button bsStyle="success" bsSize="mini" onClick={this.closeModal}>Sulje Dialogi</Button>
               </Link>
             </div>
           </Modal>

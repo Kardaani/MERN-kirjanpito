@@ -16,7 +16,7 @@ router.route('/insert')
 expense.save(function(err) {
       if (err)
         res.send(err);
-      res.send('Expense successfully added!');
+      res.send('Kustannus onnistuneesti lisätty!');
   });
 })
 router.route('/update')
@@ -31,7 +31,7 @@ router.route('/update')
   Expense.update({_id: req.body._id}, doc, function(err, result) {
       if (err)
         res.send(err);
-      res.send('Expense successfully updated!');
+      res.send('Kustannus onnistuneesti päivitetty!');
   });
 });
 router.get('/delete', function(req, res){
@@ -39,7 +39,7 @@ router.get('/delete', function(req, res){
  Expense.find({_id: id}).remove().exec(function(err, expense) {
   if(err)
    res.send(err)
-  res.send('Expense successfully deleted!');
+  res.send('Kustannus onnistuneesti tuhottu!');
  })
 });
 router.get('/getAll',function(req, res) {
